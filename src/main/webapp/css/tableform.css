@@ -1,0 +1,17 @@
+.ui.form td.fields, .ui.form td.field, .ui.form td.fields .field {
+    padding: 0;
+}
+
+.ui.form td.fields .field {
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px){
+    .ui.form td.fields .field:not(.sixteen):not(:first-child){
+        border-left: 1px solid #d4d4d5;
+    }
+}
+
+.ui.form td.fields .field input, .ui.form td.field input, .ui.form td.fields .field .dropdown, .ui.form td.field .dropdown {
+    border: none;
+}
