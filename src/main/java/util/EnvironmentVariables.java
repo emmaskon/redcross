@@ -3,8 +3,8 @@ package util;
 public class EnvironmentVariables {
 
     //Database info
-    public static final String MYSQL_HOST = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
-    public static final String MYSQL_PORT = System.getenv("OPENSHIFT_MYSQL_DB_PORT");
+    public static final String MYSQL_HOST = "mysql://mysql";//System.getenv("OPENSHIFT_MYSQL_DB_HOST");
+    public static final String MYSQL_PORT = "3306";//System.getenv("OPENSHIFT_MYSQL_DB_PORT");
     public static final String MYSQL_SCHEMA = "system";
     public static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     public static final String MYSQL_USER = "adminqUnjbVx";
