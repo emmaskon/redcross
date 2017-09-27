@@ -3,12 +3,12 @@ package util;
 public class EnvironmentVariables {
 
     //Database info
-    public static final String MYSQL_HOST = "localhost";//System.getenv("OPENSHIFT_MYSQL_DB_HOST");//
-    public static final String MYSQL_PORT = "3306";//System.getenv("OPENSHIFT_MYSQL_DB_PORT");//
+    public static final String MYSQL_HOST = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
+    public static final String MYSQL_PORT = System.getenv("OPENSHIFT_MYSQL_DB_PORT");
     public static final String MYSQL_SCHEMA = "system";
     public static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    public static final String MYSQL_USER = "root";//"adminqUnjbVx";//
-    public static final String MYSQL_PASSWORD = "";//EMqi5aH1D-c5";//"";
+    public static final String MYSQL_USER = "adminqUnjbVx";
+    public static final String MYSQL_PASSWORD = "EMqi5aH1D-c5";
     public static final String MYSQL_URL = "jdbc:mysql://" + MYSQL_HOST + ":" + MYSQL_PORT + "/" + MYSQL_SCHEMA + "?useUnicode=yes&characterEncoding=UTF-8";
     public static final int RECAPTCHA_WEB_SERVICE_TIMEOUT = 5000; //ms
     public static final String RECAPTCHA_SITE_KEY = "6LcVeg4TAAAAAHjrkm7jfW79yiKlEuGpE_bVNd3z";
